@@ -28,7 +28,7 @@ public class Member {
         currencyRates.put("CNY", 0.088); // 1 INR = 0.088 CNY
         currencyRates.put("INR", 1.0); // 1 INR = 1.0 INR (itself)
     }
-    @GetMapping(value = "/api/member",produces = "application/json")
+    @GetMapping(value = "/api/get-member",produces = "application/json")
     @ResponseBody
     public ArrayList<Member> getData(){
         return Database.data;
